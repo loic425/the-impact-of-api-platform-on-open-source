@@ -33,11 +33,3 @@ Nous vous aidons à concevoir et améliorer vos projets :
 * En régie ou en forfait afin de créer et/ou d'intégrer des équipes et travailler en complète collaboration.
 
 -->
-
----
-
-<img class="w-150" alt="Sylius partner" src="/sylius_partner.png">
-
----
-
-<img class="w-150" alt="Joining Akawaka tweets" src="/joining_akawaka.png">
