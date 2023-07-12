@@ -62,26 +62,4 @@ layout: center
 class: bg-black text-white
 ---
 
-Coming soon...
-
----
-layout: center
-class: bg-black text-white
----
-
-Oh, wait a minute... 💡
-
-<v-clicks>
-
-<img class="w-70" alt="Mateusz Zalewski" src="https://media.licdn.com/dms/image/C4E03AQFBErLI_Voasw/profile-displayphoto-shrink_800_800/0/1595245030545?e=1691625600&v=beta&t=CXeOPreNJDUZz19Chhy2GPZm6UDx3C9rT3w3czHVoSc">
-
-We have Mateusz Zalewski here.
-
-</v-clicks>
-
----
-layout: center
-class: bg-black text-white
----
-
 Let's release it now!
