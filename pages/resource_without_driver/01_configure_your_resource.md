@@ -5,7 +5,7 @@ use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
-#[Resource]
+#[Resource(driver: false)]
 final class BoardGameResource implements ResourceInterface
 {
     public function __construct(

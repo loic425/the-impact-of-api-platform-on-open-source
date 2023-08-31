@@ -4,25 +4,16 @@
 
 We'll use `apply_state_machine_transition` operation which allows to apply a transition using a state machine.
 
-```php {all|17|17,3}
+```php {all|9|9,4}
 namespace App\Entity;
 
+use App\Form\BookType;
 use Sylius\Component\Resource\Metadata\ApplyStateMachineTransition;
-use Sylius\Component\Resource\Metadata\BulkDelete;
-use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\Create;
-use Sylius\Component\Resource\Metadata\Delete;
-use Sylius\Component\Resource\Metadata\Resource;
-use Sylius\Component\Resource\Metadata\Update;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource]
-#[Create]
-#[Update]
-#[BulkDelete]
-#[Delete]
+#[Resource(formType: BookType::class)]
+// [...]
 #[ApplyStateMachineTransition(stateMachineTransition: 'publish')]
-#[Index]
 class Book implements ResourceInterface
 {
 }

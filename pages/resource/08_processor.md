@@ -4,26 +4,21 @@
 
 We configure an `update` operation.
 
-```php {all|13-18|13-18,5|14|15|16|16,4|17}
+```php {all|9-14|9-14,4|10|11|12|12,3|13}
 namespace App\Entity;
 
-// [...]
 use App\State\Processor\PublishBookProcessor;
 use Sylius\Component\Resource\Metadata\Update;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
 #[Resource]
-#[Create]
-#[Update]
-#[BulkDelete]
-#[Delete]
+// [...]
 #[Update(
     methods: ['PUT', 'PATCH'],
     shortName: 'publish',
     processor: PublishBookProcessor::class,
     validate: false,
 )]
-#[Index]
 class Book implements ResourceInterface
 {
 }

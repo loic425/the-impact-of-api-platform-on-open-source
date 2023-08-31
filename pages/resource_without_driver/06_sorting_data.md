@@ -134,12 +134,6 @@ transition: fade
 ---
 
 ---
-
-No!
-
-<div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/GBX71S3ubpCxWuB8kb/video" width="480"></iframe></div>
-
----
 transition: fade
 ---
 

@@ -9,7 +9,7 @@ namespace App\BoardGameBlog\Infrastructure\Sylius\Resource;
 use App\BoardGameBlog\Infrastructure\Sylius\State\Processor\CreateBoardGameProcessor;
 use Sylius\Component\Resource\Metadata\Create;
 
-#[Resource]
+#[Resource(driver: false)]
 #[Index(
     grid: 'app_board_game'
 )]

@@ -4,9 +4,10 @@
 
 We'll use `Delete` operation which allows to remove an existing item of your resource.
 
-```php {all|13|13,5}
+```php {all|14|14,6}
 namespace App\Entity;
 
+use App\Form\BookType;
 use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Create;
 use Sylius\Component\Resource\Metadata\Delete;
@@ -14,7 +15,7 @@ use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Resource\Metadata\Update;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource]
+#[Resource(formType: BookType::class)]
 #[Create]
 #[Update]
 #[Delete]
@@ -26,6 +27,8 @@ class Book implements ResourceInterface
 ```
 
 </v-clicks>
+
+---
 
 ## Route
 

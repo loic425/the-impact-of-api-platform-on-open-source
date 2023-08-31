@@ -4,9 +4,10 @@
 
 We'll use `Bulk Delete` operation which allows to remove several items of your resource at the same time.
 
-```php {all|14|14,3}
+```php {all|15|15,4}
 namespace App\Entity;
 
+use App\Form\BookType;
 use Sylius\Component\Resource\Metadata\BulkDelete;
 use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Create;
@@ -15,7 +16,7 @@ use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Resource\Metadata\Update;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource]
+#[Resource(formType: BookType::class)]
 #[Create]
 #[Update]
 #[BulkDelete]

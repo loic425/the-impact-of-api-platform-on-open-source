@@ -10,7 +10,7 @@ use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
-#[Resource]
+#[Resource(driver: false)]
 #[Index(
     grid: 'app_board_game'
 )]

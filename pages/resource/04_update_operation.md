@@ -4,16 +4,17 @@
 
 We'll use `Update` operation which allows to edit an existing item of your resource.
 
-```php {all|11|11,6}
+```php {all|12|12,7}
 namespace App\Entity;
 
+use App\Form\BookType;
 use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Create;
 use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Resource\Metadata\Update;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource]
+#[Resource(formType: BookType::class)]
 #[Create]
 #[Update]
 #[Index]

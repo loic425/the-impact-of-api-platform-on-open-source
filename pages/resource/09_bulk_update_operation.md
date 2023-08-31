@@ -4,25 +4,20 @@
 
 We'll use `Bulk Update` operation which allows to update several items of your resource at the same time.
 
-```php {all|12|12,5|13|14|15}
+```php {all|9|9,4|10|11|12}
 namespace App\Entity;
 
-// [...]
 use App\State\Processor\PublishBookProcessor;
 use Sylius\Component\Resource\Metadata\BulkUpdate;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
 #[Resource]
-#[Create]
-#[Update]
-#[BulkDelete]
+// [...]
 #[BulkUpdate(
     shortName: 'bulk_publish',
     processor: PublishBookProcessor::class,
     validate: false,
 )]
-#[Delete]
-#[Index]
 class Book implements ResourceInterface
 {
 }

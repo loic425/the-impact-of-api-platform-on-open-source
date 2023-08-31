@@ -4,15 +4,16 @@
 
 We'll use `Create` operation which allows to add a new item of your resource.
 
-```php {all|9|9,4}
+```php {all|9|9,3|10|10,5}
 namespace App\Entity;
 
+use App\Form\BookType;
 use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Create;
 use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource]
+#[Resource(formType: BookType::class)]
 #[Create]
 #[Index]
 class Book implements ResourceInterface
