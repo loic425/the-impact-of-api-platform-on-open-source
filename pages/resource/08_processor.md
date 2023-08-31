@@ -4,14 +4,13 @@
 
 We configure an `update` operation.
 
-```php {all|9-14|9-14,4|10|11|12|12,3|13}
+```php {all|8-13|8-13,4|9|10|11|11,3|12}
 namespace App\Entity;
 
 use App\State\Processor\PublishBookProcessor;
 use Sylius\Component\Resource\Metadata\Update;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource]
 // [...]
 #[Update(
     methods: ['PUT', 'PATCH'],

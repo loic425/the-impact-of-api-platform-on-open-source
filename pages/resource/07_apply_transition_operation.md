@@ -4,14 +4,12 @@
 
 We'll use `apply_state_machine_transition` operation which allows to apply a transition using a state machine.
 
-```php {all|9|9,4}
+```php {all|7|7,3}
 namespace App\Entity;
 
-use App\Form\BookType;
 use Sylius\Component\Resource\Metadata\ApplyStateMachineTransition;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource(formType: BookType::class)]
 // [...]
 #[ApplyStateMachineTransition(stateMachineTransition: 'publish')]
 class Book implements ResourceInterface
