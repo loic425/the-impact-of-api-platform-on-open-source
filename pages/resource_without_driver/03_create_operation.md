@@ -2,14 +2,19 @@
 
 <v-clicks>
 
-```php{all|11|11,5|12|12,4}
+```php{all|11|11,5|17|17,4}
 namespace App\BoardGameBlog\Infrastructure\Sylius\Resource;
 
 // [...]
 use App\BoardGameBlog\Infrastructure\Sylius\State\Processor\CreateBoardGameProcessor;
+use App\BoardGameBlog\Infrastructure\Symfony\Form\Type\BoardGameType;
+use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Create;
 
-#[Resource(driver: false)]
+#[Resource(
+    driver: false, 
+    formType: BoardGameType::class),
+]
 #[Index(
     grid: 'app_board_game'
 )]
