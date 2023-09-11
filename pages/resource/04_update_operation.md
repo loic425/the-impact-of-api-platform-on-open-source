@@ -34,9 +34,9 @@ class Book implements ResourceInterface
 
 It will configure this route for your `update` operation.
 
-| Name            | Method          | Path             |
-|-----------------|-----------------|------------------|
-| app_book_update | GET, PUT, PATCH | /books/{id}/edit |
+| Name            | Method                | Path             |
+|-----------------|-----------------------|------------------|
+| app_book_update | GET, PUT, PATCH, POST | /books/{id}/edit |
 
 
 </v-clicks>

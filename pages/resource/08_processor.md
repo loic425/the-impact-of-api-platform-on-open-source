@@ -13,7 +13,7 @@ use Sylius\Component\Resource\Model\ResourceInterface;
 
 // [...]
 #[Update(
-    methods: ['PUT', 'PATCH'],
+    methods: ['PUT', 'PATCH', 'POST'],
     shortName: 'publish',
     processor: PublishBookProcessor::class,
     validate: false,
@@ -34,9 +34,9 @@ class Book implements ResourceInterface
 
 It will configure this route for your `publish` operation.
 
-| Name              | Method     | Path                |
-|-------------------|------------|---------------------|
-| app_book_publish  | PUT, PATCH | /books/{id}/publish |      
+| Name              | Method           | Path                |
+|-------------------|------------------|---------------------|
+| app_book_publish  | PUT, PATCH, POST | /books/{id}/publish |      
 
 
 </v-clicks>

@@ -36,9 +36,9 @@ class Book implements ResourceInterface
 
 It will configure this route for your `delete` operation.
 
-| Name            | Method | Path        |
-|-----------------|--------|-------------|
-| app_book_delete | DELETE | /books/{id} |
+| Name            | Method       | Path               |
+|-----------------|--------------|--------------------|
+| app_book_delete | DELETE, POST | /books/{id}/delete |
 
 
 </v-clicks>

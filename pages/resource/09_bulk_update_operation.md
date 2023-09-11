@@ -32,9 +32,9 @@ class Book implements ResourceInterface
 
 It will configure this route for your `bulk_publish` operation.
 
-| Name                  | Method     | Path                |
-|-----------------------|------------|---------------------|
-| app_book_bulk_publish | PUT, PATCH | /books/bulk_publish |    
+| Name                  | Method           | Path                |
+|-----------------------|------------------|---------------------|
+| app_book_bulk_publish | PUT, PATCH, POST | /books/bulk_publish |    
 
 
 </v-clicks>

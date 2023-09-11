@@ -28,9 +28,9 @@ class Book implements ResourceInterface
 
 It will configure this route for your `apply_state_machine_transition` operation.
 
-| Name              | Method     | Path                |
-|-------------------|------------|---------------------|
-| app_book_publish  | PUT, PATCH | /books/{id}/publish |      
+| Name              | Method           | Path                |
+|-------------------|------------------|---------------------|
+| app_book_publish  | PUT, PATCH, POST | /books/{id}/publish |      
 
 
 </v-clicks>

@@ -38,9 +38,9 @@ class Book implements ResourceInterface
 
 It will configure this route for your `bulk_delete` operation.
 
-| Name                 | Method | Path               |
-|----------------------|--------|--------------------|
-| app_book_bulk_delete | DELETE | /books/bulk_delete |    
+| Name                 | Method       | Path               |
+|----------------------|--------------|--------------------|
+| app_book_bulk_delete | DELETE, POST | /books/bulk_delete |    
 
 
 </v-clicks>
