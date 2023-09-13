@@ -25,7 +25,7 @@ class: 'text-center'
 
 ---
 
-# New Resource System
+# New Sylius Resource System
 
 <v-clicks>
 

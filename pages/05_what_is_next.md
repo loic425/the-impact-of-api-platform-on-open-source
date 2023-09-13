@@ -65,6 +65,35 @@ return static function (ResourceConfigurator $resourceConfigurator): void {
 ```
 
 ---
+
+```php
+// config/api_platform/resources.php
+namespace Symfony\Component\DependencyInjection\Loader\Configurator;
+
+use App\Entity\Book;
+use App\Entity\Subscription;
+use ApiPlatorm\Loader\Configuration\ApiResourceConfigurator;
+
+return static function (ApiResourceConfigurator $resourceConfigurator): void {
+    $resourceConfigurator
+        ->withResource((new ApiResource(Book::class))
+            ->withRoutePrefix('admin')
+            ->withOperations([
+                new GetCollection(),
+                new Post(),
+                new Put(),
+                new Delete(),    
+            ])
+        )
+        ->withResource((new ApiResource(Subscription::class))
+            ->withOperations([
+                new GetCollection(),
+            ])
+        )
+    ;
+};
+
+---
 layout: image
 image: https://www.lelabocoworking.com/wp-content/uploads/2019/07/Coop%C3%A9ration.jpg
 transition: fade

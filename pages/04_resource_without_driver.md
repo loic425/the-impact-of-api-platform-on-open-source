@@ -1,4 +1,4 @@
-# Resource without driver
+# Sylius Resource without driver
 
 <v-clicks>
 

@@ -3,7 +3,7 @@ layout: image-right
 image: https://ressources.mobizel.com/wp-content/uploads/2019/12/monofony-banner-mobizel-2048x707.png
 ---
 
-# Why Monofony?
+# What is Monofony and Why use it?
 
 <v-clicks>
 
