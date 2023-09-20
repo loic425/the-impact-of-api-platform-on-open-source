@@ -45,3 +45,20 @@ transition: fade
 layout: image
 image: /administrators.png
 ---
+
+---
+
+## Monofony API Pack
+
+```shell
+$ composer require monofony/api-pack "^0.10"
+```
+
+<br />
+
+* voir [l'installation détaillée dans la doc](https://docs.monofony.com/current/setup/application).
+
+---
+layout: image
+image: /api_pack.png
+---

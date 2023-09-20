@@ -36,12 +36,13 @@ Open-source cooperation
 
 ### Resource configurator
 
-```php
+```php {all|9|9,7|11|11,6|12|13-18|20|21-23}
 // config/package/sylius_resource.php
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 use App\Entity\Book;
 use App\Entity\Subscription;
+use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Loader\Configuration\ResourceConfigurator;
 
 return static function (ResourceConfigurator $resourceConfigurator): void {
@@ -66,12 +67,13 @@ return static function (ResourceConfigurator $resourceConfigurator): void {
 
 ---
 
-```php
+```php {all|9|9,7|11|11,6|12|13-18|20|21-23}
 // config/api_platform/resources.php
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 use App\Entity\Book;
 use App\Entity\Subscription;
+use ApiPlatform\Metadata\ApiResource;
 use ApiPlatorm\Loader\Configuration\ApiResourceConfigurator;
 
 return static function (ApiResourceConfigurator $resourceConfigurator): void {
@@ -92,6 +94,8 @@ return static function (ApiResourceConfigurator $resourceConfigurator): void {
         )
     ;
 };
+
+```
 
 ---
 layout: image
